@@ -1,0 +1,161 @@
+// -------------------- first layer -------------
+
+.first-layer {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  .jumbotron {
+  width: 90%;
+  position: absolute;
+  top:5vh;
+  left: 15vw;
+  z-index: -2;
+  }
+}
+
+// ------------------ second layer --------------
+
+.second-layer {
+  width: 100%;
+  border-style: solid;
+  border-width: 80vh 150vh 50vw 90vw;
+  border-color: transparent transparent rgba(87,15,22,.7) transparent;
+  z-index: -53;
+  top: -73.7vh;
+  left: 30vw;
+  position: absolute;
+}
+
+// ------------------ third layer --------------
+
+.third-layer {
+  width: 100%;
+  height: 0px;
+  border-style: solid;
+  position: absolute;
+  border-width: 100vh 0 0 81vh;
+  border-color: transparent transparent transparent rgba(0,0,0,0.8);
+  z-index: -52;
+  .actuel  {
+  position: relative;
+    right: -40vw;
+    top: -26vh;
+    color: rgba(255,255,255,0.8);
+    h2 {
+      padding-left: 1%;
+      &:hover {
+        color: rgba(255,255,255,1);
+      }
+    }
+  }
+}
+
+// ------------------ fourth layer --------------
+.fourth-layer {
+  width: 100%;
+  height: 100%;
+  background-image: url('../Image/renomer.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  position: absolute;
+  z-index: -54;
+  background-attachment: fixed;
+  background-position: right;
+  // background-origin: 0 -600px 0 0;
+}
+
+// ------------------ fifth layer --------------
+
+.fifth-layer {
+// -webkit-transform:rotate(360deg);
+  border-style: solid;
+  border-width: 0 30vw 60vh 0;
+  border-color: transparent transparent rgba(87,15,22,0.9) transparent;
+  z-index: -43;
+  position: absolute;
+  transform: rotate(180deg);
+  right: 0;
+}
+
+// -------------- seven layer ------------
+
+.seven-layer {
+  width: 100%;
+  height: 0px;
+  border-style: solid;
+  position: absolute;
+  border-width: 0 5vw 150vh 1vw;
+  border-color: transparent transparent transparent rgba(87,15,22,0.6);
+  z-index: -42;
+  top:35vh;
+  left: 30vw;
+  transform: rotate(10deg);
+}
+
+// ------------------ height layer --------------
+
+.height-layer {
+  width: 100%;
+  height: 0px;
+  border-style: solid;
+  position: absolute;
+  border-width: 1vh 1vw 7vh 71vw;
+  border-color: transparent transparent transparent rgba(0,0,0,0.6);
+  z-index: -43;
+  bottom: 25vh;
+  transform: rotate(10deg);
+  left: -5vh;
+}
+
+// ------------------ nine layer --------------
+
+.nine-layer {
+  width: 100%;
+  height: 0px;
+  border-style: solid;
+  position: absolute;
+  border-width: 20vh 70vw 50vh 2vw;
+  border-color: transparent transparent transparent rgba(0,0,0,0.7);
+  z-index: -42;
+  left: 70vw;
+  transform: rotate(-10deg);
+}
+
+// ------------------ ten layer --------------
+
+.ten-layer {
+  width: 100%;
+  height: 0px;
+  border-style: solid;
+  position: absolute;
+  border-width: 0 5vw 150vh 1vw;
+  border-color: transparent transparent transparent rgba(0,0,0,0.8);
+  z-index: -42;
+  top:75vh;
+  right: 40vw;
+  transform: rotate(130deg);
+}
+
+// ----------------- Eleven Layer --------------
+
+.eleven-layer {
+  width: 30%;
+  height: 100%;
+  top: 23vh;
+  background-image: url('../Image/pendule.svg');
+  color: #000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -54;
+  background-attachment: scroll;
+  background-position: right;
+  left: 0;
+  // background-origin: 0 -600px 0 0;
+}

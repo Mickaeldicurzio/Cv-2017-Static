@@ -1,0 +1,109 @@
+// --------------------- Navbar -------------------
+
+.change .burger-menu-inner {
+  width: 250px;
+  height: 350px;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.1s ease;
+
+  li {
+    list-style: none;
+    opacity: 1;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0);
+
+    &:hover {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: all 0.1s ease;
+    }
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.burger-menu-inner {
+  height: 350px;
+  width: 0;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  transition: all 0.1s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  li {
+    list-style: none;
+    opacity: 0;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.4rem;
+    font-weight: 700;
+    opacity: 0;
+  }
+}
+
+.burger-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255 , 255, 255, 0.9);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  z-index: 9999;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}

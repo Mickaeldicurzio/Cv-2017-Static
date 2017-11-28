@@ -1,0 +1,30 @@
+{
+  "name": "assets-builder",
+  "private": true,
+  "version": "4.0.3",
+  "engines": {
+    "node": ">=6.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "jquery": "^3.2",
+    "gulp": "^3.9",
+    "gulp-task-maker": "^1.4"
+  },
+  "dependencies": {
+    "gulp-install": "^1.1.0",
+    "normalize.css": "^6.0",
+    "sass-mq-build": "^1.0"
+  },
+  "browserslist": [
+    "last 4 chrome versions",
+    "last 4 firefox versions",
+    "last 2 edge versions",
+    "ios >= 9",
+    "android >= 5",
+    "ie >= 11"
+  ]
+}

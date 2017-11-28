@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gulp-autoprefixer": "^4.0",
+    "gulp-csso": "^3.0"
+  }
+}
