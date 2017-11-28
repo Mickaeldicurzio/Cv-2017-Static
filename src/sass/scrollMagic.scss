@@ -1,0 +1,63 @@
+.animate {
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.socialChange {
+
+    position: fixed;
+    transition: all 0.3s ease;
+    top:10vh;
+    z-index: 9997;
+    padding-right: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 25px;
+    height: 250px;
+    left: 0vw;
+    top: 0vh;
+    padding: 2%;
+    i {
+      transition: all 0.3s ease;
+      transition: all 0.3s ease-out;
+      z-index: 9999;
+      padding-right: 50px;
+      width: 50px;
+      height: 50px;
+      left: 0vw;
+      top: 1vh;
+      padding: 2%;
+      color: #fff;
+    }
+}
+
+.zap {
+  opacity: 1;
+}
+
+.animate2,
+.animate2-2,
+.animate2-3 {
+  transition: all 0.5s ease;
+  opacity: 0;
+  left: 1000px;
+  position: relative;
+}
+
+.zap2 {
+  opacity: 1;
+  left: 0;
+}
+
+
+.animate3,
+.animate3-1 {
+  transition: all 0.5s ease;
+  opacity: 0;
+  right: 1000px;
+  position: relative;
+}
+
+.zap3 {
+  opacity: 1;
+  right: 0;
+}

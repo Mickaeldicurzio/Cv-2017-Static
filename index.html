@@ -9,11 +9,12 @@
 </head>
 
 <body>
+  <div class="initSocial" class="spacer s0" style="position:absolute; top:-13vh"></div>
 
   <div class="nav">
     <div class="burger-menu animated fadeIn" onclick="myFunction(this)">
 
-      <div class="burger-icon" class="burger-icon" onclick="myFunction(this)">
+      <div class="burger-icon" class="burger-icon">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -21,16 +22,22 @@
 
       <ul class="burger-menu-inner">
         <li>
-          <a href="">Accueil</a>
+          <a href="">Home</a>
         </li>
         <li>
-          <a href="">Lien 1</a>
+          <a href="">Portfolio</a>
         </li>
         <li>
-          <a href="">Lien 2</a>
+          <a href="">Skills</a>
         </li>
         <li>
-          <a href="">Lien 3</a>
+          <a href="">Blog</a>
+        </li>
+        <li>
+          <a href="">Who Am I</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
         </li>
       </ul>
 
@@ -45,7 +52,7 @@
     <div class="first-layer">
       <div class="jumbotron">
         <h1 class="animated fadeIn">Mickael DI CURZIO</h1>
-        <h2 class="animated fadeIn">Dévelopeur Web Junior</h2>
+        <h2 class="animated fadeIn">Junior Web Developer</h2>
       </div>
     </div>
 
@@ -76,8 +83,8 @@
             <i class="fa fa-gitlab fa-2x" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="actuel">
-<h2>Entreprise Actuel</h2>
+        <div class="actuel animated fadeInLeft">
+<h2>Current Company</h2>
         <svg id="logo" data-name="logo" width="200" height="40" viewBox="0 0 256 60">
                   <title>Kaliop: Interactive Media</title>
                   <path class="st0" d="M60 0H42L12 30l30 30h18L30 30zM0 42v18h18zM18 0H0v18z" fill="#fc4c02"></path>
@@ -101,8 +108,7 @@
     </div>
 
     <div class="face2">
-
-
+      <div class="trigger" class="spacer s0"style="position:absolute; top:30vh"></div>
       <!-- Cinquième Layer -->
 
       <div class="fifth-layer">
@@ -117,27 +123,91 @@
 
       </div>
 
-      <div class="nine-layer">
+      <div class="nine-layer  animate2">
 
       </div>
 
-      <div class="ten-layer">
+      <div class="ten-layer  animate3-1">
 
       </div>
 
       <div class="eleven-layer">
 
       </div>
+
     </div>
 
-    <div class="face3">
-      <p>Curieux et passionné, j'ai pu, au sein de ma formation m'épanouir au travers d'un process de travail novateur.<br> Ma participation à différentes interventions
-        <br><br><span>- Initiation au développement au collège Las Cases ainsi qu'à l'Ecole Polytechnique (EPF)<br>
-- Hackathon Futurapolis à Toulouse<br>
-- Différents meetups</span><br><br> m'ont permis de démontrer mon engouement pour l'apprentissage, la pédagogie et le partage auprès d'un oratoire ou d'une équipe de travail en open-space.<br></p>
+    <div class="face3 animate">
+            <div class="sceneSocial" class="spacer s0" style="position:absolute; top:-13vh"></div>
+            <div class="trigger2" class="spacer s0" style="position:absolute; top:-13vh"></div>
+            <div class="trigger3-1" class="spacer s0" style="position:absolute; top:-13vh"></div>
+
+      <p>Curious and passionate, I've could, inside previous experiences, blossom  through novating working process.
+        <br> I've participate to differents interventions :
+        <br><br>
+        <span>- Developement initiation at "Collège Las Cases" and "Ecole Polytechnique (EPF)"<br>
+              - "Hackathon Futurapolis" in Toulouse<br>
+              - Differents meetups</span>
+              <br><br>this events gave me the oportunity to demonstrate my craze for learning, pedagogy and sharing nearby oratory or working team in open-space.<br></p>
+
     </div>
+
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="dist/minjs.js"></script>
+  <script src="javascript/ScrollMagic.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
+
+  <script>
+  	// init controller
+  	var controller = new ScrollMagic.Controller();
+  </script>
+
+  <script>
+  	// build scene
+  	var scene = new ScrollMagic.Scene({triggerElement: ".trigger"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate", "zap")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene2 = new ScrollMagic.Scene({triggerElement: ".trigger2"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate2", "zap2")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene22 = new ScrollMagic.Scene({triggerElement: ".trigger2-2"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate2-2", "zap2")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene23 = new ScrollMagic.Scene({triggerElement: ".trigger2-3"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate2-3", "zap2")
+
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene3 = new ScrollMagic.Scene({triggerElement: ".trigger3"})
+  					// trigger animation by adding a css class
+  					.setClassToggle(".animate3", "zap3")
+  					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+  					.addTo(controller);
+    var scene31 = new ScrollMagic.Scene({triggerElement: ".trigger3-1"})
+            // trigger animation by adding a css class
+            .setClassToggle(".animate3-1", "zap3")
+            // .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+            .addTo(controller);
+    var sceneSocial = new ScrollMagic.Scene({triggerElement: ".sceneSocial"})
+            // trigger animation by adding a css class
+            .setClassToggle(".social", "socialChange")
+            // .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+            .addTo(controller);
+    var initSocial = new ScrollMagic.Scene({triggerElement: ".initSocial"})
+            // trigger animation by adding a css class
+            .setClassToggle(".init", "social")
+            // .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+            .addTo(controller);
+  </script>
 
   <footer>
 

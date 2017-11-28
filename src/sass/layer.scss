@@ -9,11 +9,12 @@
   align-items: center;
   z-index: -1;
   .jumbotron {
-  width: 90%;
-  position: absolute;
-  top:5vh;
-  left: 15vw;
-  z-index: -2;
+    width: 90%;
+    position: absolute;
+    top:5vh;
+    left: 15vw;
+    z-index: -2;
+    font-family: 'moon_light';
   }
 }
 
@@ -25,7 +26,7 @@
   border-width: 80vh 150vh 50vw 90vw;
   border-color: transparent transparent rgba(87,15,22,.7) transparent;
   z-index: -53;
-  top: -73.7vh;
+  top: -76vh;
   left: 30vw;
   position: absolute;
 }
@@ -42,7 +43,7 @@
   z-index: -52;
   .actuel  {
   position: relative;
-    right: -40vw;
+    right: -37vw;
     top: -26vh;
     color: rgba(255,255,255,0.8);
     h2 {

@@ -1,3 +1,3 @@
-function myFunction() {
+function myFunction(x) {
     x.classList.toggle("change");
 }
