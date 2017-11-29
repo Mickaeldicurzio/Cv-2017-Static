@@ -8,7 +8,6 @@
     position: fixed;
     transition: all 0.3s ease;
     top:10vh;
-    z-index: 9997;
     padding-right: 50px;
     background-color: rgba(0, 0, 0, 0.9);
     width: 25px;
@@ -19,14 +18,16 @@
     i {
       transition: all 0.3s ease;
       transition: all 0.3s ease-out;
-      z-index: 9999;
       padding-right: 50px;
       width: 50px;
       height: 50px;
       left: 0vw;
       top: 1vh;
       padding: 2%;
-      color: #fff;
+      color: rgba(255,255,255,0.6);
+      &:hover {
+      color: rgba(255,255,255,1);
+      }
     }
 }
 
@@ -54,10 +55,12 @@
   transition: all 0.5s ease;
   opacity: 0;
   right: 1000px;
-  position: relative;
+  position: absolute;
+  z-index: -100;
 }
 
 .zap3 {
   opacity: 1;
   right: 0;
+  z-index: -100;
 }

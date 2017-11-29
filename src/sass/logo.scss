@@ -1,0 +1,45 @@
+.row {
+  width: 100%;
+  .symfony {
+    transition: all 0.3s ease;
+    color: #fff;
+    transform: skew(0deg, 0deg);
+    border-right: 3px solid rgba(87,15,22,0.8);
+    width: 300px;
+    margin: 20px 0;
+
+    .texte {
+      opacity: 1;
+      transition: all 0.3s ease;
+      color: rgba(87,15,22,0.8);
+      width: 40vw;
+      transition: all 0.3s ease;
+      top: 0;
+      font-size: 1.7rem;
+      padding-left: 60vh;
+      position: absolute;
+    }
+
+    svg {
+      width: 200px;
+      height: 250px;
+      padding-left: 5%;
+      padding-right: 5%;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &:hover {
+    .symfony {
+      border-color: rgba(0, 0, 0, 0) transparent transparent transparent;
+      transition: all 0.3s ease;
+      width: 100%;
+
+      .texte {
+        opacity: 0;
+        transition: all 0.3s ease;
+        display: none;
+      }
+    }
+  }
+}

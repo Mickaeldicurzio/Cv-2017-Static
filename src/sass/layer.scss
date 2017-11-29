@@ -8,16 +8,16 @@
   justify-content: center;
   align-items: center;
   z-index: -1;
+
   .jumbotron {
     width: 90%;
     position: absolute;
-    top:5vh;
+    top: 5vh;
     left: 15vw;
     z-index: -2;
     font-family: 'moon_light';
   }
 }
-
 // ------------------ second layer --------------
 
 .second-layer {
@@ -30,32 +30,34 @@
   left: 30vw;
   position: absolute;
 }
-
 // ------------------ third layer --------------
 
 .third-layer {
   width: 100%;
-  height: 0px;
+  height: 0;
   border-style: solid;
   position: absolute;
   border-width: 100vh 0 0 81vh;
   border-color: transparent transparent transparent rgba(0,0,0,0.8);
-  z-index: -52;
-  .actuel  {
-  position: relative;
+  z-index: -53;
+
+  .actuel {
+    position: relative;
     right: -37vw;
     top: -26vh;
     color: rgba(255,255,255,0.8);
+
     h2 {
       padding-left: 1%;
+
       &:hover {
         color: rgba(255,255,255,1);
       }
     }
   }
 }
-
 // ------------------ fourth layer --------------
+
 .fourth-layer {
   width: 100%;
   height: 100%;
@@ -65,16 +67,15 @@
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: darken;
   position: absolute;
-  z-index: -54;
+  z-index: -60;
   background-attachment: fixed;
   background-position: right;
   // background-origin: 0 -600px 0 0;
 }
-
 // ------------------ fifth layer --------------
 
 .fifth-layer {
-// -webkit-transform:rotate(360deg);
+  // -webkit-transform:rotate(360deg);
   border-style: solid;
   border-width: 0 30vw 60vh 0;
   border-color: transparent transparent rgba(87,15,22,0.9) transparent;
@@ -83,27 +84,25 @@
   transform: rotate(180deg);
   right: 0;
 }
-
 // -------------- seven layer ------------
 
 .seven-layer {
   width: 100%;
-  height: 0px;
+  height: 0;
   border-style: solid;
   position: absolute;
   border-width: 0 5vw 150vh 1vw;
   border-color: transparent transparent transparent rgba(87,15,22,0.6);
   z-index: -42;
-  top:35vh;
+  top: 35vh;
   left: 30vw;
   transform: rotate(10deg);
 }
-
 // ------------------ height layer --------------
 
 .height-layer {
   width: 100%;
-  height: 0px;
+  height: 0;
   border-style: solid;
   position: absolute;
   border-width: 1vh 1vw 7vh 71vw;
@@ -113,36 +112,32 @@
   transform: rotate(10deg);
   left: -5vh;
 }
-
 // ------------------ nine layer --------------
 
 .nine-layer {
   width: 100%;
-  height: 0px;
+  height: 0;
   border-style: solid;
   position: absolute;
   border-width: 20vh 70vw 50vh 2vw;
   border-color: transparent transparent transparent rgba(0,0,0,0.7);
-  z-index: -42;
   left: 70vw;
   transform: rotate(-10deg);
 }
-
 // ------------------ ten layer --------------
 
 .ten-layer {
   width: 100%;
-  height: 0px;
+  height: 0;
   border-style: solid;
   position: absolute;
   border-width: 0 5vw 150vh 1vw;
   border-color: transparent transparent transparent rgba(0,0,0,0.8);
-  z-index: -42;
-  top:75vh;
+  top: 75vh;
   right: 40vw;
   transform: rotate(130deg);
+  opacity: 0;
 }
-
 // ----------------- Eleven Layer --------------
 
 .eleven-layer {
