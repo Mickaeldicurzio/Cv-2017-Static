@@ -43,3 +43,33 @@
   margin: auto;
   left: 10vw;
 }
+
+.face5 {
+  z-index: -10;
+  width: 80%;
+  height: 100vh;
+  position: absolute;
+  top: 415vh;
+  margin: auto;
+  left: 10vw;
+  display: flex;
+align-items: center;
+flex-direction: column;
+font-family: 'moon_light';
+}
+
+.face5 h2 {
+  font-size: 2rem;
+  padding-top: 5%;
+}
+
+.face5 h3 {
+  padding-top: 5%;
+  align-self: flex-end;
+}
+
+.face5 p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: rgba(87,15,22,0.9)
+}
