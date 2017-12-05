@@ -6,4 +6,37 @@ footer {
   top: 520vh;
   position: absolute;
   z-index: -10;
+  margin-top: 50px;
+  // margin: auto;
+  .row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: rgba(0, 0, 0, 1);
+
+    p {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+      font-size: 25px;
+    }
+
+    .img-footer {
+      width: 50%;
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+    }
+
+    svg {
+      width: 50px;
+      height: 50px;
+      padding-top: 20px;
+      path {
+        fill: rgba(255,255,255,0.9);
+      }
+    }
+  }
 }

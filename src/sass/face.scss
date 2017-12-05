@@ -14,20 +14,21 @@
   top: 100vh;
 }
 
-
 .face3 {
-  z-index:-8;
+  z-index: -8;
   width: 55%;
   top: 150vh;
   background-color: rgba(255,255,255,0.7);
   position: absolute;
-  right:55px;
+  right: 55px;
   border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0.4);
+
   p {
     font-size: 20px;
     font-weight: 700;
     padding: 20px;
+
     span {
       color: rgba(87, 15, 22, 1);
     }
@@ -53,23 +54,32 @@
   margin: auto;
   left: 10vw;
   display: flex;
-align-items: center;
-flex-direction: column;
-font-family: 'moon_light';
-}
+  align-items: center;
+  flex-direction: column;
+  font-family: 'moon_light';
 
-.face5 h2 {
-  font-size: 2rem;
-  padding-top: 5%;
-}
+  h2 {
+    font-size: 2rem;
+    padding-top: 5%;
+  }
 
-.face5 h3 {
-  padding-top: 5%;
-  align-self: flex-end;
-}
+  h3 {
+    padding-top: 5%;
+    align-self: flex-end;
+  }
 
-.face5 p {
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: rgba(87,15,22,0.9)
+  p {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgba(87,15,22,0.9);
+  }
+  a {
+    color: rgba(87,15,22,0.9);
+    width: 0px;
+    &:hover {
+      border-bottom: 1px solid rgba(87,15,22,0.9);
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+  }
 }

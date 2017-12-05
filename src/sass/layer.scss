@@ -45,12 +45,14 @@
     position: relative;
     right: -37vw;
     top: -26vh;
-    color: rgba(255,255,255,0.8);
 
     h2 {
       padding-left: 1%;
-
+      color: rgba(255,255,255,0.8);
       &:hover {
+        color: rgba(255,255,255,1);
+      }
+      &:active {
         color: rgba(255,255,255,1);
       }
     }
